@@ -8,9 +8,9 @@ li {
 }
 
 .tiles {
-	width: 100%;
+    width: 100%;
     background: #ffc14d;
-    padding: 10%;
+    padding: 7px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -18,11 +18,15 @@ li {
 }
 
 .tiles .tile {
-    height: 100px;
-	width: 100px;
-	margin: 5px;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 20%;
+    max-width: 200px;
+    border: 1px solid black;
+    background: black;
+    border-radius: 7px;
+    margin: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 3px 10px 0 rgba(46, 61, 73, 0.5);
 }
