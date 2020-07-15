@@ -1,13 +1,19 @@
 h1 {
 	font-family: 'Chewy', cursive;
+    text-align: center;
     padding: 20px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 li {
     font-family: 'Chewy', cursive;
+    text-align: center;
 }
 
-.tiles {
+.alltiles {
     width: 100%;
     background: #ffc14d;
     padding: 7px;
@@ -17,16 +23,95 @@ li {
     align-items: center;
 }
 
-.tiles .tile {
+.alltiles .tile {
     width: 20%;
     max-width: 200px;
-    border: 1px solid black;
-    background: black;
+    border: 2px solid black;
+    background: ;
     border-radius: 7px;
     margin: 7px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 4px 3px 10px 0 rgba(46, 61, 73, 0.5);
+    box-shadow: 0px 10px 10px 0px rgba(46, 61, 73, 0.5);
+}
+
+.alltiles .tile.open {
+	transform: rotateY(0);
+	background: #02b3e4;
+	cursor: default;
+}
+
+.alltiles .tile.match {
+	cursor: default;
+	background:#00ac14;
+}
+
+.alltiles .tile.unmatched {
+	background:#ff0800;
+}
+
+.alltiles .tile.disabled {
+	pointer-events: none;
+	opacity: 0.9;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 5px;
+	width: 85%;
+	position: relative;
+	transition: all 5s ease-in-out;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.show {
+	visibility: visible !important;
+	opacity: 100 !important;
+}
+
+#reset {
+    background-color: #141214;
+	padding: 0.7rem 1rem;
+	font-size: 1.1rem;
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	font-family: 'Chewy', cursive;
+    text-align: center;
+	color: #ffffff;
+	border-radius: 5px;
+}
+
+#play-again {
+	background-color: #141214;
+	padding: 0.7rem 1rem;
+	font-size: 1.1rem;
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	font-family: 'Chewy', cursive;
+    text-align: center;
+	color: #ffffff;
+	border-radius: 5px;
 }
