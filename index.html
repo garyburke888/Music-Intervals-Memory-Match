@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Intervals Memory Match</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6c592d73c5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Music Intervals Memory Match</title>
 </head>
 
 <body>
@@ -25,22 +27,22 @@
 
     <div class="col">
         <ul class="alltiles" id="gameboard">
-            <li class="tile" type="unison"><img class="img-fluid" src="assets/images/Unison.png"></li>
-            <li class="tile" type="majorsecond"><img class="img-fluid" src="assets/images/Major 2nd.png"></li>
-            <li class="tile" type="majorthird"><img class="img-fluid" src="assets/images/Major 3rd.png"></li>
-            <li class="tile" type="perfectfourth"><img class="img-fluid" src="assets/images/Perfect 4th.png"></li>
-            <li class="tile" type="perfectfifth"><img class="img-fluid" src="assets/images/Perfect 5th.png"></li>
-            <li class="tile" type="majorsixth"><img class="img-fluid" src="assets/images/Major 6th.png"></li>
-            <li class="tile" type="majorseventh"><img class="img-fluid" src="assets/images/Major 7th.png"></li>
-            <li class="tile" type="octave"><img class="img-fluid" src="assets/images/Octave.png"></li>
-            <li class="tile" type="unison"><img class="img-fluid" src="assets/images/Unison.png"></li>
-            <li class="tile" type="majorsecond"><img class="img-fluid" src="assets/images/Major 2nd.png"></li>
-            <li class="tile" type="majorthird"><img class="img-fluid" src="assets/images/Major 3rd.png"></li>
-            <li class="tile" type="perfectfourth"><img class="img-fluid" src="assets/images/Perfect 4th.png"></li>
-            <li class="tile" type="perfectfifth"><img class="img-fluid" src="assets/images/Perfect 5th.png"></li>
-            <li class="tile" type="majorsixth"><img class="img-fluid" src="assets/images/Major 6th.png"></li>
-            <li class="tile" type="majorseventh"><img class="img-fluid" src="assets/images/Major 7th.png"></li>
-            <li class="tile" type="octave"><img class="img-fluid" src="assets/images/Octave.png"></li>
+            <li class="tile" type="unison"><img class="img-fluid" src="assets/images/Unison.png" onclick="audio_unison()"></li>
+            <li class="tile" type="majorsecond"><img class="img-fluid" src="assets/images/Major 2nd.png" onclick="audio_second()"></li>
+            <li class="tile" type="majorthird"><img class="img-fluid" src="assets/images/Major 3rd.png" onclick="audio_third()"></li>
+            <li class="tile" type="perfectfourth"><img class="img-fluid" src="assets/images/Perfect 4th.png" onclick="audio_fourth()"></li>
+            <li class="tile" type="perfectfifth"><img class="img-fluid" src="assets/images/Perfect 5th.png" onclick="audio_fifth()"></li>
+            <li class="tile" type="majorsixth"><img class="img-fluid" src="assets/images/Major 6th.png" onclick="audio_sixth()"></li>
+            <li class="tile" type="majorseventh"><img class="img-fluid" src="assets/images/Major 7th.png" onclick="audio_seventh()"></li>
+            <li class="tile" type="octave"><img class="img-fluid" src="assets/images/Octave.png" onclick="audio_octave()"></li>
+            <li class="tile" type="unison"><img class="img-fluid" src="assets/images/Unison.png" onclick="audio_unison()"></li>
+            <li class="tile" type="majorsecond"><img class="img-fluid" src="assets/images/Major 2nd.png" onclick="audio_second()"></li>
+            <li class="tile" type="majorthird"><img class="img-fluid" src="assets/images/Major 3rd.png" onclick="audio_third()"></li>
+            <li class="tile" type="perfectfourth"><img class="img-fluid" src="assets/images/Perfect 4th.png" onclick="audio_fourth()"></li>
+            <li class="tile" type="perfectfifth"><img class="img-fluid" src="assets/images/Perfect 5th.png" onclick="audio_fifth()"></li>
+            <li class="tile" type="majorsixth"><img class="img-fluid" src="assets/images/Major 6th.png" onclick="audio_sixth()"></li>
+            <li class="tile" type="majorseventh"><img class="img-fluid" src="assets/images/Major 7th.png" onclick="audio_seventh()"></li>
+            <li class="tile" type="octave"><img class="img-fluid" src="assets/images/Octave.png" onclick="audio_octave()"></li>
         </ul>
     </div>
 
@@ -55,7 +57,7 @@
          </div>
     </div>
 
-    <script src="js/play.js"></script>
+    <script src="assets/js/play.js"></script>
 
 </body>
 </html>
