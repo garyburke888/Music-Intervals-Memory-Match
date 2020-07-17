@@ -115,42 +115,42 @@ for (var i = 0; i < tiles.length; i++){
     tile.addEventListener("click", gameover);
 };
 
-     var audio1 = new Audio('/assets/audio/unison.mp3');
+     var audio1 = new Audio('assets/audio/unison.mp3');
      function audio_unison() {
              audio1.play();
 }
 
-     var audio2 = new Audio('/assets/audio/second.mp3');
+     var audio2 = new Audio('assets/audio/second.mp3');
      function audio_second() {
              audio2.play();
 } 
 
-     var audio3 = new Audio('/assets/audio/third.mp3');
+     var audio3 = new Audio('assets/audio/third.mp3');
      function audio_third() {
              audio3.play();
 } 
 
-     var audio4 = new Audio('/assets/audio/fourth.mp3');
+     var audio4 = new Audio('assets/audio/fourth.mp3');
      function audio_fourth() {
              audio4.play();
 } 
 
-     var audio5 = new Audio('/assets/audio/fifth.mp3');
+     var audio5 = new Audio('assets/audio/fifth.mp3');
      function audio_fifth() {
              audio5.play();
 } 
 
-     var audio6 = new Audio('/assets/audio/sixth.mp3');
+     var audio6 = new Audio('assets/audio/sixth.mp3');
      function audio_sixth() {
              audio6.play();
 } 
 
-     var audio7 = new Audio('/assets/audio/seventh.mp3');
+     var audio7 = new Audio('assets/audio/seventh.mp3');
      function audio_seventh() {
              audio7.play();
 } 
 
-     var audio8 = new Audio('/assets/audio/octave.mp3');
+     var audio8 = new Audio('assets/audio/octave.mp3');
      function audio_octave() {
              audio8.play();
 } 
