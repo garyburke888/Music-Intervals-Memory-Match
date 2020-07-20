@@ -4,18 +4,19 @@ h1 {
     padding: 20px;
 }
 
-ul {
-    list-style-type: none;
-}
-
-li {
+p {
     font-family: 'Chewy', cursive;
-    text-align: center;
+    text-align: center;    
 }
 
 .alltiles {
     width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 10px;
     background: #ffc14d;
+    border: 2px solid black;
+    border-radius: 7px;
     padding: 7px;
     display: flex;
     flex-wrap: wrap;
@@ -101,6 +102,7 @@ li {
     text-align: center;
 	color: #ffffff;
 	border-radius: 5px;
+    cursor: pointer;
 }
 
 #play-again {
@@ -114,4 +116,5 @@ li {
     text-align: center;
 	color: #ffffff;
 	border-radius: 5px;
+    cursor: pointer;
 }
