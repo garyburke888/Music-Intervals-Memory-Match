@@ -1,3 +1,7 @@
+body {
+    background-color: #00A4CCFF;
+}
+
 h1 {
 	font-family: 'Chewy', cursive;
     text-align: center;
@@ -14,7 +18,7 @@ p {
     max-width: 1000px;
     margin: auto;
     margin-bottom: 10px;
-    background: #ffc14d;
+    background: #FFA500;
     border: 2px solid black;
     border-radius: 7px;
     padding: 7px;

@@ -6,6 +6,9 @@ const alltiles = document.getElementById("gameboard");
 
 let matchedTile = document.getElementsByClassName("match");
 
+let moves = 0;
+let counter = document.querySelector(".moves");
+
 let modal = document.getElementById("youwin")
 
 var openedTiles = [];
@@ -39,6 +42,9 @@ function startGame(){
         });
         tiles[i].classList.remove("show", "open", "match", "disabled");
     }
+    
+    moves = 0;
+    counter.innerHTML = moves;
 }
 
 var displayTile = function (){
@@ -51,7 +57,7 @@ function tileOpen() {
     openedTiles.push(this);
     var len = openedTiles.length;
     if(len === 2){
-        
+        moveCounter();
         if(openedTiles[0].type === openedTiles[1].type){
             matched();
         } else {
@@ -70,6 +76,7 @@ function matched(){
 
 function unmatched(){
     openedTiles[0].classList.add("unmatched");
+
     openedTiles[1].classList.add("unmatched");
     disable();
     setTimeout(function(){
@@ -93,6 +100,11 @@ function enable(){
             matchedTile[i].classList.add("disabled");
         }
     });
+}
+
+function moveCounter(){
+    moves++;
+    counter.innerHTML = moves;
 }
 
 function gameover(){
