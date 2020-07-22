@@ -5,12 +5,13 @@ body {
 h1 {
 	font-family: 'Chewy', cursive;
     text-align: center;
-    padding: 20px;
+    padding: 2%
 }
 
 p {
     font-family: 'Chewy', cursive;
-    text-align: center;    
+    text-align: center;
+    margin: 1%;
 }
 
 .alltiles {
