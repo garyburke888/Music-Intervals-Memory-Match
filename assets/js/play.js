@@ -7,6 +7,7 @@ const alltiles = document.getElementById("gameboard");
 let matchedTile = document.getElementsByClassName("match");
 
 let moves = 0;
+
 let counter = document.querySelector(".moves");
 
 let modal = document.getElementById("youwin")

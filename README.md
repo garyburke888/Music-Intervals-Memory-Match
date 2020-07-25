@@ -1,39 +1,69 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+<h1>MUSIC INTERVALS MEMORY MATCH</h1>
+A basic memory game with an added audio feature.
 
-Welcome garyburke888,
+The main purpose of this game to help young music students have fun while learning music intervals. The game consists of 16 tiles, which are 8 sets of matching pairs. It's a version of the popular game 'Concentration'. At the beginning of the game all of the tiles are blanked out. Two tiles are flipped over on each turn. The object of the game is to turn over pairs of matching tiles. In this version of the game the tiles are named after a music interval (Unison, Major 2nd, Major 3rd etc.) and when clicked, will also play that music interval as a learning mechanism.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+Over the course of the game, it becomes known where certain tiles are located, and so upon turning up one tile, players with good memory will be able to remember where they have already seen its pair. The player aims to match all the pairs in as little moves as possible.
 
-## Gitpod Reminders
+Once they finsih the game, they get an option to play again.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<h1>UX</h1>
+<b>The ideal client for this game is;</b>
 
-`python3 -m http.server`
+* Young music student.
+* Music teacher.
 
-A blue button should appear to click: *Make Public*,
+<b>Users of this game are;</b>
 
-Another blue button should appear to click: *Open Browser*.
+* Looking for a fun way to learn about music intervals.
+* Looking for help teaching music intervals.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<b>This game is;</b>
 
-A blue button should appear to click: *Make Public*,
+* Easy to understand.
+* Easy to play.
+* Quick to play.
+* Educational.
+* Fun.
+* Fast loading.
+* Minimalist.
 
-Another blue button should appear to click: *Open Browser*.
+<b>Client Stories:</b>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+* When I play this game I want to have fun.
+* When I play this game I want to learn music intervals.
+* When I play this game I want to be challenged.
+* When I play this game I want to be able to try again.
+* When I encourage a student to play this game I want them to understand it quickly.
+* When I encourage a student to play this game I want them to hear music intervals.
+* When I encourage. astudent to play this game I want them to have fun.
 
-## Updates Since The Instructional Video
+<h1>FEATURES</h1>
+The game has a minimalist design, optimized for tablets and phones. It features a short title, concise directions on how to play, a move counter, the gameboard and a reset button.
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+The game starts on page load. All tile positions are shuffled using a Math.random() function. All tiles are .png images. When the game starts they are all given a black background to make the titles disappear. Once the player clicks a tile the background colour changes and the title becomes visible. A short audio clip will also play each time the player clicks a tile, which is the music interval that corresponds to the title (Perfect 4th, Perfect 5th etc.).
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+The move counter increases by one every two-clicks of tiles, as this counts as one 'turn'.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+When a second tile is clicked on a turn, its type is checked against the first tile and if they match, they stay shown and become inactive. If they don't match they revert to being invisible and stay active.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+When all matches have been made (and all tiles are fully visible) the game has been won and a modal appears, giving the option to play the game again.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Clicking 'play again' refreshes the page and starts a new game. The 'reset' button underneath the gameboard does the same function and can be pressed at any point.
 
---------
+<h1>TECHNOLOGIES USED</h1>
 
-Happy coding!
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+* Jasmine
+* GitHub
+* GitPod
+* Google Fonts
+
+<h1>TESTING</h1>
+
+* Site was tested on Chrome, Safari, Edge, Mozilla & Firefox.
+* Site was tested on various screens / sizes including desktop, laptop, iPhone & iPad.
+* 
