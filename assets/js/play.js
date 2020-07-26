@@ -10,7 +10,7 @@ let moves = 0;
 
 let counter = document.querySelector(".moves");
 
-let modal = document.getElementById("youwin")
+let modal = document.getElementById("youwin");
 
 var openedTiles = [];
 
@@ -26,12 +26,12 @@ function shuffle(array) {
     }
 
     return array;
-};
+}
 
 document.body.onload = startGame();
 
 function startGame(){
- 
+
     openedTiles = [];
 
     tiles = shuffle(tiles);
@@ -43,7 +43,7 @@ function startGame(){
         });
         tiles[i].classList.remove("show", "open", "match", "disabled");
     }
-    
+
     moves = 0;
     counter.innerHTML = moves;
 }
@@ -65,7 +65,7 @@ function tileOpen() {
             unmatched();
         }
     }
-};
+}
 
 function matched(){
     openedTiles[0].classList.add("match", "disabled");
@@ -77,7 +77,6 @@ function matched(){
 
 function unmatched(){
     openedTiles[0].classList.add("unmatched");
-
     openedTiles[1].classList.add("unmatched");
     disable();
     setTimeout(function(){
@@ -110,10 +109,10 @@ function moveCounter(){
 
 function gameover(){
     if (matchedTile.length == 16){
-    
+
         modal.classList.add("show");
 
-    };
+    }
 }
 
 function playAgain(){
@@ -126,7 +125,7 @@ for (var i = 0; i < tiles.length; i++){
     tile.addEventListener("click", displayTile);
     tile.addEventListener("click", tileOpen);
     tile.addEventListener("click", gameover);
-};
+}
 
      var audio1 = new Audio('assets/audio/unison.mp3');
      function audio_unison() {

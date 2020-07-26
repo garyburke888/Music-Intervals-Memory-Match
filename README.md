@@ -45,7 +45,7 @@ The game starts on page load. All tile positions are shuffled using a Math.rando
 
 The move counter increases by one every two-clicks of tiles, as this counts as one 'turn'.
 
-When a second tile is clicked on a turn, its type is checked against the first tile and if they match, they stay shown and become inactive. If they don't match they revert to being invisible and stay active.
+When a second tile is clicked on a turn, its 'type' attribute is checked against the first tile and if they match, they stay shown and become inactive. If they don't match they revert to being invisible and stay active.
 
 When all matches have been made (and all tiles are fully visible) the game has been won and a modal appears, giving the option to play the game again.
 
@@ -64,6 +64,30 @@ Clicking 'play again' refreshes the page and starts a new game. The 'reset' butt
 
 <h1>TESTING</h1>
 
-* Site was tested on Chrome, Safari, Edge, Mozilla & Firefox.
-* Site was tested on various screens / sizes including desktop, laptop, iPhone & iPad.
-* 
+* Game was tested on Chrome, Safari, Edge, Mozilla & Firefox.
+* Game was tested on various screens / sizes including desktop, laptop, iPhone & iPad.
+* Game was forwarded to friends and family (including children) for feedback on user experience.
+* Jasmine tests were written and implemented on the game.
+
+<h1>DEPLOYMENT</h1>
+
+* Game was developed using GitPod, committed to Git and pushed to GitHub.
+* Game was deployed to GitHub Pages.
+
+<h1>FUTURE DEVELOPMENT PLANS</h1>
+
+* Game could have more levels.
+* Game could let users register a best score and try to beat it.
+* Game could have beginner / inter / advanced versions.
+* Game could have even more audio involved, victory music when matches are made and the opposite.
+
+<h1>CREDITS & ACKNOWLEDGEMENTS</h1>
+
+* Tutorial - https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript
+* Testing - https://jasmine.github.io/2.0/introduction
+* Testing, design & development ideas - Code Institute
+* Gerard McBride - Mentor
+* Gary Burke - Designer
+
+
+
