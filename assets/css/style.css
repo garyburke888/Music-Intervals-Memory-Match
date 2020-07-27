@@ -1,6 +1,10 @@
+/* global styles */
+
 body {
     background-color: #00A4CCFF;
 }
+
+/* styles for headings and paragraphs */
 
 h1 {
 	font-family: 'Chewy', cursive;
@@ -13,6 +17,8 @@ p {
     text-align: center;
     margin: 1%;
 }
+
+/* styles for gameboard and various tile settings */
 
 .alltiles {
     width: 100%;
@@ -63,6 +69,8 @@ p {
 	opacity: 0.9;
 }
 
+/* styles for end of game modal */
+
 .overlay {
 	position: fixed;
 	top: 0;
@@ -96,6 +104,8 @@ p {
 	opacity: 100 !important;
 }
 
+/* styles for reset button */
+
 #reset {
     background-color: #141214;
 	padding: 0.7rem 1rem;
@@ -109,6 +119,8 @@ p {
 	border-radius: 5px;
     cursor: pointer;
 }
+
+/* styles for play again button */
 
 #play-again {
 	background-color: #141214;

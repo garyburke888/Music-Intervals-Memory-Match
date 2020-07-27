@@ -90,4 +90,3 @@ Clicking 'play again' refreshes the page and starts a new game. The 'reset' butt
 * Gary Burke - Designer
 
 
-
