@@ -1,55 +1,56 @@
 <h1>MUSIC INTERVALS MEMORY MATCH</h1>
+
+<a href="https://garyburke888.github.io/Music-Intervals-Memory-Match/" target="_blank">View & play the game here</a>
+
+<img src="assets/images/screenshot.jpg" border="1px solid black">
+
 A basic memory game with an added audio feature.
 
-The main purpose of this game to help young music students have fun while learning music intervals. The game consists of 16 tiles, which are 8 sets of matching pairs. It's a version of the popular game 'Concentration'. At the beginning of the game all of the tiles are blanked out. Two tiles are flipped over on each turn. The object of the game is to turn over pairs of matching tiles. In this version of the game the tiles are named after a music interval (Unison, Major 2nd, Major 3rd etc.) and when clicked, will also play that music interval as a learning mechanism.
+The main purpose of this game to help young music students have fun while learning music Intervals. The game consists of 16 tiles, which are 8 sets of matching pairs. It's a version of the popular game 'Concentration'. At the beginning of the game all of the tiles are blanked out. Two tiles are flipped over on each turn. The object of the game is to turn over pairs of matching tiles. In this version of the game the tiles are named after a music interval (Unison, Major 2nd, Major 3rd, Perfect 4th etc.) and when clicked, will also play that music interval as a learning mechanism. 
 
-Over the course of the game, it becomes known where certain tiles are located, and so upon turning up one tile, players with good memory will be able to remember where they have already seen its pair. The player aims to match all the pairs in as little moves as possible.
+Over the course of the game, it becomes known where certain tiles are located, and so upon turning up one tile, players with good memory will be able to remember where they have already seen its pair. The player aims to match all the pairs in as little moves as possible. Once they finish the game, they get an option to play again.
 
-Once they finsih the game, they get an option to play again.
+<h1>USER EXPERIENCE (UX)</h1>
 
-<h1>UX</h1>
-<b>The ideal client for this game is;</b>
+<b>USER STORIES</b>
 
-* Young music student.
-* Music teacher.
+<b>FIRST TIME USER GOALS</b>
+* As a first time user, I want to quickly understand how to play the game.
+* As a first time user, I want to have fun playing the game, and learn something new.
+* As a first time user, I want to know this will help me teach students music intervals.
 
-<b>Users of this game are;</b>
+<b>RETURNING USER GOALS</b>
+* As a returning user, I want to get better at playing the game.
+* As a returning user, I want to progress to more difficult levels.
+* As a returning user, I want to share the game with more students.
 
-* Looking for a fun way to learn about music intervals.
-* Looking for help teaching music intervals.
+<b>FREQUENT USER GOALS</b>
+* As a frequent user, I want to enhance my ability to recognise music intervals.
+* As a frequent user, I want to get better at playing the game.
+* As a frequent user, I want to rely on this game as a teaching tool.
 
-<b>This game is;</b>
+<h1>DESIGN</h1>
 
-* Easy to understand.
-* Easy to play.
-* Quick to play.
-* Educational.
-* Fun.
-* Fast loading.
-* Minimalist.
+<b>COLOUR SCHEME</b>
 
-<b>Client Stories:</b>
+* The two main colours are blue and orange.
+* Game tiles are black when hidden, blue when active, green when matched and temporarily red when not matched.
+* Main headings and text are black.
+* Buttons are black, with white text.
 
-* When I play this game I want to have fun.
-* When I play this game I want to learn music intervals.
-* When I play this game I want to be challenged.
-* When I play this game I want to be able to try again.
-* When I encourage a student to play this game I want them to understand it quickly.
-* When I encourage a student to play this game I want them to hear music intervals.
-* When I encourage. astudent to play this game I want them to have fun.
+<b>Fonts</b>
+
+* Google Fonts - Chewy.
+
+<b>Images</b>
+
+* All tiles are .png files.
+* No background images are used, so as not to distract from the game board in any way.
 
 <h1>FEATURES</h1>
-The game has a minimalist design, optimized for tablets and phones. It features a short title, concise directions on how to play, a move counter, the gameboard and a reset button.
 
-The game starts on page load. All tile positions are shuffled using a Math.random() function. All tiles are .png images. When the game starts they are all given a black background to make the titles disappear. Once the player clicks a tile the background colour changes and the title becomes visible. A short audio clip will also play each time the player clicks a tile, which is the music interval that corresponds to the title (Perfect 4th, Perfect 5th etc.).
-
-The move counter increases by one every two-clicks of tiles, as this counts as one 'turn'.
-
-When a second tile is clicked on a turn, its 'type' attribute is checked against the first tile and if they match, they stay shown and become inactive. If they don't match they revert to being invisible and stay active.
-
-When all matches have been made (and all tiles are fully visible) the game has been won and a modal appears, giving the option to play the game again.
-
-Clicking 'play again' refreshes the page and starts a new game. The 'reset' button underneath the gameboard does the same function and can be pressed at any point.
+* Responsive on all devices
+* Interactive elements
 
 <h1>TECHNOLOGIES USED</h1>
 
@@ -61,13 +62,16 @@ Clicking 'play again' refreshes the page and starts a new game. The 'reset' butt
 * GitHub
 * GitPod
 * Google Fonts
+* Corel Paint Shop Pro (for custom images)
+* Apple Logic Pro (for audio clips)
 
 <h1>TESTING</h1>
 
-* Game was tested on Chrome, Safari, Edge, Mozilla & Firefox.
+* The W3C Markup Validator and W3C CSS Validator Services were used to ensure there were no fatal syntax errors.
+* Game was tested on Chrome, Safari, Edge, Mozilla & Firefox browsers.
 * Game was tested on various screens / sizes including desktop, laptop, iPhone & iPad.
 * Game was forwarded to friends and family (including children) for feedback on user experience.
-* Jasmine tests were written and implemented on the game.
+* Jasmine tests were also written and implemented - <a href="testing.html">here</a>.
 
 <h1>DEPLOYMENT</h1>
 
@@ -88,5 +92,3 @@ Clicking 'play again' refreshes the page and starts a new game. The 'reset' butt
 * Testing, design & development ideas - Code Institute
 * Gerard McBride - Mentor
 * Gary Burke - Designer
-
-
