@@ -16,7 +16,7 @@ p {
     font-family: 'Chewy', cursive;
     text-align: center;
     margin: 1%;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* styles for gameboard and various tile settings */
@@ -35,6 +35,8 @@ p {
     justify-content: space-evenly;
     align-items: center;
 }
+
+/* tyles are given a black background to match their title and therefore hide the title until clicked */
 
 .alltiles .tile {
     width: 20%;

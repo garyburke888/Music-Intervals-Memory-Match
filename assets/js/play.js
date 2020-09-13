@@ -11,48 +11,48 @@ let moves = 0;
 let counter = document.querySelector(".moves");
 
 // declare opened tiles array
-var openedTiles = [];
+let openedTiles = [];
 
 // declare modal for end of game
 let modal = document.getElementById("youwin");
 
 // declare audio files and play functions
-     var audio1 = new Audio('assets/audio/unison.mp3');
+     let audio1 = new Audio('assets/audio/unison.mp3');
      function audio_unison() {
              audio1.play();
 }
-     var audio2 = new Audio('assets/audio/second.mp3');
+     let audio2 = new Audio('assets/audio/second.mp3');
      function audio_second() {
              audio2.play();
 } 
-     var audio3 = new Audio('assets/audio/third.mp3');
+     let audio3 = new Audio('assets/audio/third.mp3');
      function audio_third() {
              audio3.play();
 } 
-     var audio4 = new Audio('assets/audio/fourth.mp3');
+     let audio4 = new Audio('assets/audio/fourth.mp3');
      function audio_fourth() {
              audio4.play();
 } 
-     var audio5 = new Audio('assets/audio/fifth.mp3');
+     let audio5 = new Audio('assets/audio/fifth.mp3');
      function audio_fifth() {
              audio5.play();
 } 
-     var audio6 = new Audio('assets/audio/sixth.mp3');
+     let audio6 = new Audio('assets/audio/sixth.mp3');
      function audio_sixth() {
              audio6.play();
 } 
-     var audio7 = new Audio('assets/audio/seventh.mp3');
+     let audio7 = new Audio('assets/audio/seventh.mp3');
      function audio_seventh() {
              audio7.play();
 } 
-     var audio8 = new Audio('assets/audio/octave.mp3');
+     let audio8 = new Audio('assets/audio/octave.mp3');
      function audio_octave() {
              audio8.play();
 } 
 
 // function to shuffle tiles
 function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
+    let currentIndex = array.length, temporaryValue, randomIndex;
 
     while (currentIndex !== 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
@@ -78,7 +78,7 @@ function startGame(){
     tiles = shuffle(tiles);
 
     // loop to remove current classes from tiles
-    for (var i = 0; i < tiles.length; i++){
+    for (let i = 0; i < tiles.length; i++){
         alltiles.innerHTML = "";
         [].forEach.call(tiles, function(item) {
             alltiles.appendChild(item);
@@ -101,7 +101,7 @@ var displayTile = function (){
 // function to add tiles to opened tiles array and check if it's a match for previous tile, based on type
 function tileOpen() {
     openedTiles.push(this);
-    var len = openedTiles.length;
+    let len = openedTiles.length;
     if(len === 2){
         moveCounter();
         if(openedTiles[0].type === openedTiles[1].type){
@@ -145,7 +145,7 @@ function disable(){
 function enable(){
     Array.prototype.filter.call(tiles, function(tile){
         tile.classList.remove('disabled');
-        for(var i = 0; i < matchedTile.length; i++){
+        for(let i = 0; i < matchedTile.length; i++){
             matchedTile[i].classList.add("disabled");
         }
     });
@@ -177,7 +177,7 @@ function playAgain(){
 }
 
 // loop for event listeners on tiles
-for (var i = 0; i < tiles.length; i++){
+for (let i = 0; i < tiles.length; i++){
     tile = tiles[i];
     tile.addEventListener("click", displayTile);
     tile.addEventListener("click", tileOpen);

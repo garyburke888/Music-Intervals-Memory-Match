@@ -15,21 +15,20 @@
 
 <body>
 
-    <header>
-        <h1 class="text-uppercase">Music Intervals Memory Match</h1>
-        <p>
-            To begin - click on a tile.<br>
-            Listen to the interval and remember its name.<br>
-            Try to find a match among the other tiles.<br>
-            Make as few moves as you can!
-        </p>
-    </header>
+    <div class="container">
+    <div class="row">
 
-    <div class="col">
+    <div class="col-12">
+        <h1 class="text-uppercase">Music Intervals Memory Match</h1>
+            <hr>
+               <p>To begin - click on a tile, listen to the interval and remember its name. Try to find a match among the other tiles making as few moves as can!</p>
+            <hr>
+    </div>
+    <div class="col-12">
         <p>You've made <span class="moves">0</span> Move(s) so far</p>
     </div>
 
-    <div class="col">
+    <div class="col-12">
         <ul class="alltiles" id="gameboard">
             <li class="tile" type="unison"><img class="img-fluid" src="assets/images/Unison.png" onclick="audio_unison()" alt="Unison"></li>
             <li class="tile" type="majorsecond"><img class="img-fluid" src="assets/images/Major2nd.png" onclick="audio_second()" alt="Major 2nd"></li>
@@ -50,7 +49,7 @@
         </ul>
     </div>
 
-    <div class="col">
+    <div class="col-12">
         <p>
             <button id ="reset" onclick="playAgain()">Reset</button>
         </p>
@@ -65,6 +64,9 @@
     </div>
 
     <script src="assets/js/play.js"></script>
+
+    </div>
+    </div>
 
 </body>
 </html>
