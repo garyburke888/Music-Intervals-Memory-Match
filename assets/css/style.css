@@ -115,7 +115,7 @@ p {
 	font-size: 1.1rem;
 	display: block;
 	margin: 0 auto;
-	width: 50%;
+	width: 75%;
 	font-family: 'Chewy', cursive;
     text-align: center;
 	color: #ffffff;
@@ -137,4 +137,35 @@ p {
 	color: #ffffff;
 	border-radius: 5px;
     cursor: pointer;
+}
+
+/* styles for contact button */
+
+#contact {
+    background-color: #141214;
+	padding: 0.7rem 1rem;
+	font-size: 1.1rem;
+	display: block;
+	margin: 0 auto;
+	width: 75%;
+	font-family: 'Chewy', cursive;
+    text-align: center;
+	color: #ffffff;
+	border-radius: 5px;
+    cursor: pointer;
+}
+
+/* styles for contact form */
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color:  #FFA500;
+    color: #fafafa;
 }

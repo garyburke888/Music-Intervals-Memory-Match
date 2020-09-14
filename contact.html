@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Music Intervals Memory Match | Contact</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init("user_i6i6k3vtzqXf4z6KraMC5");
+   })();
+   </script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+                <div class="center-form">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                    <textarea rows="5" name="message" class="form-control" id="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn btn-secondary center-block">Send Message</button>
+                </form>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <p><button id="contact" onclick="window.location.href='index.html';">Back to game</button></p>
+            </div>
+
+        </div>
+    </div>
+
+<script src="assets/js/sendEmail.js"></script>
+
+</body>
+</html>
