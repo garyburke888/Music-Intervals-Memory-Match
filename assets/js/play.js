@@ -183,3 +183,13 @@ for (let i = 0; i < tiles.length; i++){
     tile.addEventListener("click", tileOpen);
     tile.addEventListener("click", gameover);
 }
+
+//Function To Display Contact Popup
+function div_show() {
+document.getElementById('contact').style.display = "block";
+}
+
+//Function to Hide Contact Popup
+function div_hide(){
+document.getElementById('contact').style.display = "none";
+}
