@@ -20,35 +20,46 @@ let modal = document.getElementById("youwin");
      let audio1 = new Audio('assets/audio/unison.mp3');
      function audio_unison() {
              audio1.play();
+             audio1.volume = 0.66;
 }
      let audio2 = new Audio('assets/audio/second.mp3');
      function audio_second() {
              audio2.play();
+             audio2.volume = 0.66;
 } 
      let audio3 = new Audio('assets/audio/third.mp3');
      function audio_third() {
              audio3.play();
+             audio3.volume = 0.66;
 } 
      let audio4 = new Audio('assets/audio/fourth.mp3');
      function audio_fourth() {
              audio4.play();
+             audio4.volume = 0.66;
 } 
      let audio5 = new Audio('assets/audio/fifth.mp3');
      function audio_fifth() {
              audio5.play();
+             audio5.volume = 0.66;
 } 
      let audio6 = new Audio('assets/audio/sixth.mp3');
      function audio_sixth() {
              audio6.play();
+             audio6.volume = 0.66;
 } 
      let audio7 = new Audio('assets/audio/seventh.mp3');
      function audio_seventh() {
              audio7.play();
+             audio7.volume = 0.66;
 } 
      let audio8 = new Audio('assets/audio/octave.mp3');
      function audio_octave() {
              audio8.play();
+             audio8.volume = 0.66;
 } 
+
+    let audio9 = new Audio('assets/audio/match.mp3');
+    let audio10 = new Audio('assets/audio/youwin.mp3');
 
 // function to shuffle tiles
 function shuffle(array) {
@@ -114,6 +125,7 @@ function tileOpen() {
 
 // function if tiles match
 function matched(){
+    audio9.play();
     openedTiles[0].classList.add("match", "disabled");
     openedTiles[1].classList.add("match", "disabled");
     openedTiles[0].classList.remove("show", "open", "no-event");
@@ -160,6 +172,9 @@ function moveCounter(){
 // function to run on completion of game, when all matches are made
 function gameover(){
     if (matchedTile.length == 16){
+
+        // play youwin audio
+        audio10.play();
 
         // show you win modal
         modal.classList.add("show");
