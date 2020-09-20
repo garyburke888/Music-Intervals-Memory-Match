@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
         (function(){
             emailjs.init("user_i6i6k3vtzqXf4z6KraMC5");
         })();
@@ -78,7 +78,7 @@
                 <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                 <textarea rows="5" name="message" class="form-control" id="message" placeholder="Message" required></textarea>
                 <button type="submit" class="btn btn-secondary center-block">Send Message</button>
-                <input type="exit" class="btn btn-secondary center-block" value="Back to game" onclick="div_hide()">
+                <input type="button" class="btn btn-secondary center-block" value="Back to game" onclick="div_hide()">
             </form>
         </div>
     </div>

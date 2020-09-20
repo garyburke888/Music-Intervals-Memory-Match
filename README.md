@@ -1,8 +1,8 @@
 # MUSIC INTERVALS MEMORY MATCH
 
-[view and play the game here](https://garyburke888.github.io/Music-Intervals-Memory-Match)
+View and play the game [here](https://garyburke888.github.io/Music-Intervals-Memory-Match).
 
-![MIMM](assets/images/screenshot.jpg "MIMM Screenshot")
+![MIMM on iPad](assets/images/screenshots/MIMM_iPad_mockup.jpg "MIMM on iPad")
 
 ## A basic memory game with an added audio feature.
 
@@ -12,45 +12,51 @@ Over the course of the game, it becomes known where certain tiles are located, a
 
 # USER EXPERIENCE (UX)
 
-## USER STORIES:
+![MIMM iPhone Wireframes](assets/images/screenshots/MIMM_Wireframes_iPhone.jpg "MIMM iPhone Wireframes")
+![MIMM iPad Wireframes](assets/images/screenshots/MIMM_Wireframes_iPad.jpg "MIMM iPad Wireframes")
 
-## - FIRST TIME USER GOALS
+## USER STORIES
+
+### FIRST TIME USER GOALS:
+* As a first time user, I want to play this game on my phone or tablet.
 * As a first time user, I want to quickly understand how to play the game.
 * As a first time user, I want to have fun playing the game, and learn something new.
 * As a first time user, I want to know this will help me teach students music intervals.
 
-## - RETURNING USER GOALS
+### RETURNING USER GOALS:
 * As a returning user, I want to get better at playing the game.
 * As a returning user, I want to progress to more difficult levels.
-* As a returning user, I want to share the game with more students.
+* As a returning user, I want to share my views with the games creator.
 
-## - FREQUENT USER GOALS
+### FREQUENT USER GOALS:
 * As a frequent user, I want to enhance my ability to recognise music intervals.
-* As a frequent user, I want to get better at playing the game.
-* As a frequent user, I want to rely on this game as a teaching tool.
+* As a frequent user, I want to enhance my students ability to recognise music intervals.
+* As a frequent user, I want to rely on this game as a quick and easy teaching tool.
 
 # DESIGN
 
-## - COLOUR SCHEME
+### COLOUR SCHEME
 
 * The two main colours are blue and orange.
 * Game tiles are black when hidden, blue when active, green when matched and temporarily red when not matched.
 * Main headings and text are black.
 * Buttons are black, with white text.
 
-## - Fonts
+### Fonts
 
 * Google Fonts - Chewy.
 
-## - Images
+### Images
 
-* All tiles are .png files.
-* No background images are used, so as not to distract from the game board in any way.
+* All tiles are .png files, used as part of the mechanism to make tiles seem hidden at the start of the game (where the background of each tile is set to the same colour as the image. Once tiles are clicked, the background colour changes to make the image visible).
 
 # FEATURES
 
-* Responsive on all devices
-* Interactive elements
+* Responsive.
+* Interactive.
+* Contact Form.
+
+![MIMM Contact Form](assets/images/screenshots/MIMM_Chrome_iPhone_Contact_Screen.jpg "MIMM Contact Form on, Chrome iPhone")
 
 # TECHNOLOGIES USED
 
@@ -68,14 +74,62 @@ Over the course of the game, it becomes known where certain tiles are located, a
 
 # TESTING
 
-* The W3C Markup Validator and W3C CSS Validator Services were used to ensure there were no fatal syntax errors.
-* Game was tested on Chrome, Safari, Edge, Mozilla & Firefox browsers.
-* Game was tested on various screens / sizes including desktop, laptop, iPhone & iPad.
-* Game was forwarded to friends and family (including children) for feedback on user experience.
-* Jasmine tests were also written and implemented [here](testing.html).
+### The W3C Markup Validator and W3C CSS Validator Services gives the following non-fatal error(s):
+* HTML - The type attribute on the 'li' element is obsolete, however use of the type attribute is essential to the js code determining if tiles match or not.
+
+### Browsers:
+
+* Safari - game works as expected.
+* Chrome - game works as expected.
+* Mozilla Firefox - game works as expected.
+* Opera - game works as expected.
+* Edge - game works as expected.
+
+![MIMM on Firefox](assets/images/screenshots/MIMM_Firefox_Inspect.jpg "MIMM inspect on Firefox")
+
+### Screen Sizes:
+
+* Game is designed and optimised for use on phones and tablets. It is responsive on both and displays as expected on both, specifically in portrait orientation, where the full gameboard is visible at one time. Real world tested on iPhone and iPad with additional checks using in-broswer mock-up's of other brands of phones and tablets (Samsung Galaxy, Surface Duo etc.).
+
+![MIMM on iPhone](assets/images/screenshots/MIMM_Safari_iPhone_Gameboard_Screen.jpg "MIMM, Safari on iPhone")
+![MIMM on iPad](assets/images/screenshots/MIMM_iPad_mockup.jpg "MIMM on iPad")
+
+* Game displays well on large desktop screens but not on laptop screens where some of the gameboard is off-screen. This is something to be rectified in future versions if the game is to be available online and not just as an app.
+
+![MIMM on Laptop](assets/images/screenshots/MIMM_Opera_Laptop.jpg "MIMM, Opera Browser on a Laptop Screen")
+
+### Real World User Tests:
+
+* __Katie (Music Teacher)__ - "Game is quick and easy to understand and play. I used an iPad to play it myself and then with a student. This game would be a helpful tool in teaching music theory or could just be a fun break during a lesson. More levels, with other intervals would be great. I would use this again and again"
+* __Molly (10yr old Student)__ - "It's Fun! I played and tried to hum the notes as I pressed the buttons. I played it a few times and got better. I would play this again and my brother likes it too."
+
+
+![MIMM on iPhone](assets/images/screenshots/MIMM_Safari_iPhone_Mid-Game_Screen.jpg "MIMM Mid-Game on an iPhone")
+![MIMM on iPad](assets/images/screenshots/MIMM_Safari_iPhone_Youwin_Screen.jpg "MIMM Youwin Popup on iPhone")
+
+
+### Jasmine Testing
+
+* 3 passing tests implemented using Jasmine, view [here](testing.html).
+
+### Audio Testing
+
+* Audio files for the tiles generally play as expected, upon clicking a tile.
+* When a match is made, the second audio file does not play but a 'match' success audio file plays instead, which should give the user a feeling of success.
+* Previous audio files caused distortion when overlapping if tiles were clicked in quick succession. To help with this their sound design was amended slightly and their volume was decreased from inside the function.
+* When the game is won a 'youwin' audio file plays to signify the end of the game, this overlaps any currenlty playing file but is in the same (major) key so should give the feeling of victory when the game is won.
+
+### Contact Form Testing
+
+* Contact form pops up as expected on all browsers and on all screen sizes.
+* Contact form submits as expected, alert box appears as expected.
+* Contact form does not refresh, so a 'back to game' button was added to allow the user to return to the game and play again.
+
+![MIMM Contact Form Success](assets/images/screenshots/MIMM_Contact_Success.jpg "MIMM Contact Form Success Messge")
 
 # DEPLOYMENT
 
+* A new repository was created in GitHub.
 * Game was developed using GitPod, committed to Git and pushed to GitHub.
 * Game was deployed to GitHub Pages.
 
@@ -83,8 +137,7 @@ Over the course of the game, it becomes known where certain tiles are located, a
 
 * Game could have more levels.
 * Game could let users register a best score and try to beat it.
-* Game could have beginner / inter / advanced versions.
-* Game could have even more audio involved, victory music when matches are made and the opposite.
+* Game could have beginner / inter / advanced levels.
 
 # CREDITS & ACKNOWLEDGEMENTS
 

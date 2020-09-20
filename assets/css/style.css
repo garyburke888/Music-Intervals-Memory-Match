@@ -164,7 +164,7 @@ button[type="submit"] {
     color: #fafafa;
 }
 
-input[type="exit"] {
+input[type="button"] {
     margin-top: 15px;
     margin-bottom: 20px;
     background-color:  #FFA500;
