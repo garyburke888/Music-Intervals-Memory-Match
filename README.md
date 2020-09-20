@@ -25,12 +25,12 @@ Over the course of the game, it becomes known where certain tiles are located, a
 
 ### RETURNING USER GOALS:
 * As a returning user, I want to get better at playing the game.
-* As a returning user, I want to progress to more difficult levels.
+* As a returning user, I want to listen to the music intervals more closely.
 * As a returning user, I want to share my views with the games creator.
 
 ### FREQUENT USER GOALS:
-* As a frequent user, I want to enhance my ability to recognise music intervals.
-* As a frequent user, I want to enhance my students ability to recognise music intervals.
+* As a frequent user, I want to enhance my or my students ability to recognise music intervals.
+* As a frequent user, I want to win the game in less moves than before.
 * As a frequent user, I want to rely on this game as a quick and easy teaching tool.
 
 # DESIGN
@@ -50,6 +50,10 @@ Over the course of the game, it becomes known where certain tiles are located, a
 
 * All tiles are .png files, used as part of the mechanism to make tiles seem hidden at the start of the game (where the background of each tile is set to the same colour as the image. Once tiles are clicked, the background colour changes to make the image visible).
 
+### Audio
+
+* All audio files are .mp3 which are widely supported in all main browsers (Safari, Chrome, Edge, Firefox and Opera).
+
 # FEATURES
 
 * Responsive.
@@ -62,17 +66,17 @@ Over the course of the game, it becomes known where certain tiles are located, a
 
 # TECHNOLOGIES USED
 
-* HTML
-* CSS
-* JavaScript
-* Bootstrap
-* Jasmine
-* GitHub
-* GitPod
-* Google Fonts
-* Corel Paint Shop Pro
-* Apple Logic Pro
-* EmailJS
+* __HTML__ - for design / creation.
+* __CSS__ - for styling.
+* __JavaScript__ - for interactive functionality.
+* __Bootstrap__ - for layout.
+* __Jasmine__ - for automated testing.
+* __GitHub__ - for deployment.
+* __GitPod__ - for development.
+* __Google Fonts__ - for styling.
+* __Corel Paint Shop Pro__ - for images.
+* __Apple Logic Pro__ - for audio.
+* __EmailJS__ - for interactive functionality.
 
 # TESTING
 
