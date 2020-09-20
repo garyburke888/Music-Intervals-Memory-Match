@@ -54,7 +54,9 @@ Over the course of the game, it becomes known where certain tiles are located, a
 
 * Responsive.
 * Interactive.
-* Contact Form.
+* Audio.
+* Reset Button.
+* Popup Contact Form.
 
 ![MIMM Contact Form](assets/images/screenshots/MIMM_Chrome_iPhone_Contact_Screen.jpg "MIMM Contact Form on, Chrome iPhone")
 
@@ -68,8 +70,8 @@ Over the course of the game, it becomes known where certain tiles are located, a
 * GitHub
 * GitPod
 * Google Fonts
-* Corel Paint Shop Pro (for custom images)
-* Apple Logic Pro (for audio clips)
+* Corel Paint Shop Pro
+* Apple Logic Pro
 * EmailJS
 
 # TESTING
@@ -79,11 +81,11 @@ Over the course of the game, it becomes known where certain tiles are located, a
 
 ### Browsers:
 
-* Safari - game works as expected.
-* Chrome - game works as expected.
-* Mozilla Firefox - game works as expected.
-* Opera - game works as expected.
-* Edge - game works as expected.
+* __Safari__ - game works as expected, including audio, reset button, contact form and youwin modal.
+* __Chrome__ - game works as expected, including audio, reset button, contact form and youwin modal.
+* __Mozilla Firefox__ - game works as expected including audio, reset button, contact form and youwin modal.
+* __Opera__ - game works as expected, including audio, reset button, contact form and youwin modal.
+* __Edge__ - game works as expected, including audio, reset button, contact form and youwin modal.
 
 ![MIMM on Firefox](assets/images/screenshots/MIMM_Firefox_Inspect.jpg "MIMM inspect on Firefox")
 
@@ -114,9 +116,9 @@ Over the course of the game, it becomes known where certain tiles are located, a
 
 ### Audio Testing
 
-* Audio files for the tiles generally play as expected, upon clicking a tile.
+* Audio files for the tiles play as expected, upon clicking a tile.
 * When a match is made, the second audio file does not play but a 'match' success audio file plays instead, which should give the user a feeling of success.
-* Previous audio files caused distortion when overlapping if tiles were clicked in quick succession. To help with this their sound design was amended slightly and their volume was decreased from inside the function.
+* Previous audio files caused distortion when overlapping if tiles were clicked in quick succession. To help with this their sound design was amended slightly and their volume was decreased, from inside each function.
 * When the game is won a 'youwin' audio file plays to signify the end of the game, this overlaps any currenlty playing file but is in the same (major) key so should give the feeling of victory when the game is won.
 
 ### Contact Form Testing
@@ -135,9 +137,10 @@ Over the course of the game, it becomes known where certain tiles are located, a
 
 # FUTURE DEVELOPMENT PLANS
 
-* Game could have more levels.
-* Game could let users register a best score and try to beat it.
+* Game could have more levels, where more difficuly intervals are introduced.
+* Game could let users register a best score and then try to beat it.
 * Game could have beginner / inter / advanced levels.
+* The ability to change the sounds (from guitar to piano or bells etc.) could be offered to the user.
 
 # CREDITS & ACKNOWLEDGEMENTS
 
